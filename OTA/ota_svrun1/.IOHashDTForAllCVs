@@ -1,0 +1,65 @@
+systemVerilogAllCVIODataType = '(nil allCVs
+    (
+        (nil
+            libName    "analogLib"
+            cellName   "idc"
+            viewName   "symbol"
+            IODataType (
+            ( "MINUS" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "PLUS" ( nil  nil  nil  nil  "inputOutput" ) )
+            )
+        )
+        (nil
+            libName    "analogLib"
+            cellName   "res"
+            viewName   "symbol"
+            IODataType (
+            ( "MINUS" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "PLUS" ( nil  nil  nil  nil  "inputOutput" ) )
+            )
+        )
+        (nil
+            libName    "analogLib"
+            cellName   "cap"
+            viewName   "symbol"
+            IODataType (
+            ( "MINUS" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "PLUS" ( nil  nil  nil  nil  "inputOutput" ) )
+            )
+        )
+        (nil
+            libName    "gpdk045"
+            cellName   "pmos1v"
+            viewName   "symbol"
+            IODataType (
+            ( "B" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "G" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "D" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "S" ( nil  nil  nil  nil  "inputOutput" ) )
+            )
+        )
+        (nil
+            libName    "gpdk045"
+            cellName   "nmos1v"
+            viewName   "symbol"
+            IODataType (
+            ( "B" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "G" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "D" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "S" ( nil  nil  nil  nil  "inputOutput" ) )
+            )
+        )
+        (nil
+            libName    "miniproj"
+            cellName   "ota"
+            viewName   "schematic"
+            IODataType (
+            ( "Vout" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "VSS" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "VDD" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "V+" ( nil  nil  nil  nil  "inputOutput" ) )
+            ( "V-" ( nil  nil  nil  nil  "inputOutput" ) )
+            )
+        )
+    )
+)

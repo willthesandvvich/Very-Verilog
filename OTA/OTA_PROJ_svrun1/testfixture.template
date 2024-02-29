@@ -1,0 +1,23 @@
+
+`ifdef nil 
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+
+
+OTA_PROJ top(); 
+ 
+
+`ifdef systemVerilog
+
+ //please enter any additional verilog stimulus in the /home/seas/ugrad/tle14/ece468/OTA_PROJ_svrun1/testfixture.sv file
+`include "/home/seas/ugrad/tle14/ece468/OTA_PROJ_svrun1/testfixture.sv"
+
+`endif
+
+endmodule 
+
+`endif 

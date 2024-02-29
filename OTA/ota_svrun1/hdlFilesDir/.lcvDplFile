@@ -1,0 +1,17 @@
+tmLCVDPLList = '((nil viewType "schematicSymbol" viewName "symbol"
+    cellName "nmos1v" libName "gpdk045"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "pmos1v" libName "gpdk045"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "cap" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "res" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "idc" libName "analogLib"
+    )
+)
+xxxInternalGlobAliasList = '(nil aliasExists t)

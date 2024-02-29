@@ -1,0 +1,13 @@
+nmos1v  Q3 ( .D(net2), .B(VSS), .G(net2), .S(VSS));
+nmos1v  Q4 ( .D(net6), .B(VSS), .G(net2), .S(VSS));
+pmos1v  Q7 ( .D(Vout), .B(VDD), .G(net11), .S(VDD));
+pmos1v  Q8 ( .D(net11), .B(VDD), .G(net11), .S(VDD));
+pmos1v  Q5 ( .D(net5), .B(VDD), .G(net11), .S(VDD));
+pmos1v  Q1 ( .D(net2), .B(VDD), .G(cdsNet0), .S(net5));
+cap  Cc ( .MINUS(Vout), .PLUS(net17));
+pmos1v  Q2 ( .D(net6), .B(VDD), .G(cdsNet1), .S(net5));
+res  Rc ( .MINUS(net17), .PLUS(net6));
+nmos1v  Q6 ( .D(Vout), .B(VSS), .G(net6), .S(VSS));
+idc  I2 ( .PLUS(net11), .MINUS(VSS));
+
+endmodule

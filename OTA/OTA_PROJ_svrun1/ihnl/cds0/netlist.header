@@ -1,0 +1,29 @@
+// Library - miniproj, Cell - ota, View - schematic
+// LAST TIME SAVED: Dec 10 13:45:54 2023
+// NETLIST TIME: Feb 29 16:01:53 2024
+`timescale 1ns / 1ns 
+
+module ota ( 
+output   Vout, 
+inout   VDD, 
+inout   VSS, 
+input  cdsNet1, 
+input  cdsNet0 );
+
+wire net2 ;
+
+wire net11 ;
+
+wire net6 ;
+
+wire net17 ;
+
+wire net5 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "miniproj";
+    specparam CDS_CELLNAME = "ota";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

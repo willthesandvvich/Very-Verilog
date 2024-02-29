@@ -1,0 +1,16 @@
+// Verilog HDL and netlist files of
+// "miniproj OTA_PROJ schematic"
+
+// Netlisted models
+
+// netlist file - miniproj, ota, schematic.
+ihnl/cds0/netlist.sv
+// netlist file - miniproj, OTA_PROJ, schematic.
+ihnl/cds1/netlist.sv
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

@@ -1,0 +1,39 @@
+// Library - miniproj, Cell - OTA_PROJ, View - schematic
+// LAST TIME SAVED: Dec  2 13:03:09 2023
+// NETLIST TIME: Feb 29 16:01:53 2024
+`timescale 1ns / 1ns 
+
+module OTA_PROJ (  );
+
+wire net1 ;
+
+wire Vplus ;
+
+wire VDD ;
+
+wire Vout ;
+
+wire Vminus ;
+
+wire VSS ;
+
+wire OLG ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "miniproj";
+    specparam CDS_CELLNAME = "OTA_PROJ";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+ota I4 ( OLG, VDD, VSS, Vplus, Vminus);
+ota OTA1 ( Vout, VDD, VSS, Vplus, net1);
+vdc  V3 ( .PLUS(VDD), .MINUS(cds_globals.gnd_));
+vdc  V2 ( .PLUS(VSS), .MINUS(cds_globals.gnd_));
+vdc  V0 ( .PLUS(Vminus), .MINUS(VSS));
+vsin  V1 ( .PLUS(Vplus), .MINUS(Vminus));
+cap  C0 ( .MINUS(VSS), .PLUS(OLG));
+sp1tswitch  S0 ( .t1(OLG), .t0(VSS));
+iprobe  IPRB0 ( .MINUS(Vout), .PLUS(net1));
+
+endmodule

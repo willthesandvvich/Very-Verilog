@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+miniproj/ota/schematic ota
+cap cap
+res res
+pmos1v pmos1v
+nmos1v nmos1v
+idc idc
+$endmodel
+$net
+$endnet
+$param
+$endparam

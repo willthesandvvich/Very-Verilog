@@ -1,0 +1,27 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "OTA_PROJ"
+  repList "systemVerilog behavioral_sv functional_sv verilog_sv behavioral functional verilog schematic symbol"
+  stopList "systemVerilog verilog_sv verilog symbol"
+  globalList "gnd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/seas/ugrad/tle14/ece468/OTA_PROJ_svrun1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( net
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "miniproj/OTA_PROJ/schematic" "OTA_PROJ" )
+( "miniproj/ota/schematic" "ota" )
+ )
+( "OTA_PROJ" "ihnl/cds1/map" )
+( "ota" "ihnl/cds0/map" )
+ )

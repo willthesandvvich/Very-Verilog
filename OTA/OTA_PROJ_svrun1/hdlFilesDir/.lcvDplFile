@@ -1,0 +1,31 @@
+tmLCVDPLList = '((nil viewType "schematicSymbol" viewName "symbol"
+    cellName "nmos1v" libName "gpdk045"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "pmos1v" libName "gpdk045"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "cap" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "res" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "idc" libName "analogLib"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "vdc" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "vsin" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "sp1tswitch" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "iprobe" libName "analogLib"
+    )
+)
+xxxInternalGlobAliasList = '(nil globalExists t)
+hnlVerilogCdsGlobalsFileName = "cds_globals"
+hnlVerilogCdsGlobalsModuleName = "cds_globals"

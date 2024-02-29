@@ -1,0 +1,11 @@
+ota I4 ( OLG, VDD, VSS, Vplus, Vminus);
+ota OTA1 ( Vout, VDD, VSS, Vplus, net1);
+vdc  V3 ( .PLUS(VDD), .MINUS(cds_globals.gnd_));
+vdc  V2 ( .PLUS(VSS), .MINUS(cds_globals.gnd_));
+vdc  V0 ( .PLUS(Vminus), .MINUS(VSS));
+vsin  V1 ( .PLUS(Vplus), .MINUS(Vminus));
+cap  C0 ( .MINUS(VSS), .PLUS(OLG));
+sp1tswitch  S0 ( .t1(OLG), .t0(VSS));
+iprobe  IPRB0 ( .MINUS(Vout), .PLUS(net1));
+
+endmodule

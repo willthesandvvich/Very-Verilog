@@ -1,0 +1,1 @@
+/home/seas/ugrad/tle14/ece468/OTA_PROJ_svrun1/ihnl/cds1/netlist

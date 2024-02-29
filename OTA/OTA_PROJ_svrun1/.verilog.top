@@ -1,0 +1,24 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire net1 ;
+
+wire Vplus ;
+
+wire VDD ;
+
+wire Vout ;
+
+wire Vminus ;
+
+wire VSS ;
+
+wire OLG ;
+
+
+
+OTA_PROJ top(); 
+ 

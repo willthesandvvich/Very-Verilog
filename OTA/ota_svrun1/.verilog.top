@@ -1,0 +1,35 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire Vout;
+
+wire VDD;
+wire VSS;
+
+reg  cdsNet1;
+reg  cdsNet0;
+
+wire net2 ;
+
+wire net11 ;
+
+wire net6 ;
+
+wire net17 ;
+
+wire net5 ;
+
+reg   io_VDD, io_VSS;
+
+
+// Inout assignments 
+cds_alias  cds_alias_inst3(VSS, io_VSS);
+
+cds_alias  cds_alias_inst4(VDD, io_VDD);
+
+
+ota top(Vout, VDD, VSS, cdsNet1, cdsNet0); 
+ 

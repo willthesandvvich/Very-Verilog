@@ -1,0 +1,14 @@
+// Verilog HDL and netlist files of
+// "miniproj ota schematic"
+
+
+// alias module. For internal use only.
+hdlFilesDir/cds_alias.v
+
+// Netlisted models
+
+// netlist file - miniproj, ota, schematic.
+ihnl/cds0/netlist.sv
+
+
+// End HDL models

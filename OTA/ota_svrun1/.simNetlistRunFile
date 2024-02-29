@@ -1,0 +1,11 @@
+simVerilogNetlistFileList = '(
+    (("miniproj" "ota") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("miniproj")
+simVerilogNetlistFileCellList = '(("miniproj" 
+	("ota")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

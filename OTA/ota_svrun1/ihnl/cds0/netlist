@@ -1,0 +1,42 @@
+// Library - miniproj, Cell - ota, View - schematic
+// LAST TIME SAVED: Dec 10 13:45:54 2023
+// NETLIST TIME: Feb 29 13:44:32 2024
+`timescale 1ns / 1ns 
+
+module ota ( 
+output   Vout, 
+inout   VDD, 
+inout   VSS, 
+input  cdsNet1, 
+input  cdsNet0 );
+
+wire net2 ;
+
+wire net11 ;
+
+wire net6 ;
+
+wire net17 ;
+
+wire net5 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "miniproj";
+    specparam CDS_CELLNAME = "ota";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+nmos1v  Q3 ( .D(net2), .B(VSS), .G(net2), .S(VSS));
+nmos1v  Q4 ( .D(net6), .B(VSS), .G(net2), .S(VSS));
+pmos1v  Q7 ( .D(Vout), .B(VDD), .G(net11), .S(VDD));
+pmos1v  Q8 ( .D(net11), .B(VDD), .G(net11), .S(VDD));
+pmos1v  Q5 ( .D(net5), .B(VDD), .G(net11), .S(VDD));
+pmos1v  Q1 ( .D(net2), .B(VDD), .G(cdsNet0), .S(net5));
+cap  Cc ( .MINUS(Vout), .PLUS(net17));
+pmos1v  Q2 ( .D(net6), .B(VDD), .G(cdsNet1), .S(net5));
+res  Rc ( .MINUS(net17), .PLUS(net6));
+nmos1v  Q6 ( .D(Vout), .B(VSS), .G(net6), .S(VSS));
+idc  I2 ( .PLUS(net11), .MINUS(VSS));
+
+endmodule

@@ -1,0 +1,38 @@
+
+`ifdef nil 
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire Vout;
+
+wire VDD;
+wire VSS;
+
+reg  cdsNet1;
+reg  cdsNet0;
+
+reg   io_VDD, io_VSS;
+
+
+// Inout assignments 
+cds_alias  cds_alias_inst1(VSS, io_VSS);
+
+cds_alias  cds_alias_inst2(VDD, io_VDD);
+
+
+ota top(Vout, VDD, VSS, cdsNet1, cdsNet0); 
+ 
+
+`ifdef systemVerilog
+
+ //please enter any additional verilog stimulus in the /home/seas/ugrad/tle14/ece468/ota_svrun1/testfixture.sv file
+`include "/home/seas/ugrad/tle14/ece468/ota_svrun1/testfixture.sv"
+
+`endif
+
+endmodule 
+
+`endif 

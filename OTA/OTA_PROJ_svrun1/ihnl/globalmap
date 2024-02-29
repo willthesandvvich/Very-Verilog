@@ -1,0 +1,19 @@
+CADENCE IHNL11140
+$model
+miniproj/OTA_PROJ/schematic OTA_PROJ
+miniproj/ota/schematic ota
+cap cap
+vsin vsin
+res res
+iprobe iprobe
+pmos1v pmos1v
+vdc vdc
+nmos1v nmos1v
+idc idc
+sp1tswitch sp1tswitch
+$endmodel
+$net
+gnd! cds_globals.gnd_
+$endnet
+$param
+$endparam
